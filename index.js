@@ -5,10 +5,13 @@ $("body").on("keypress",function(){
    if(level==0)
    gamelevel();
 
-}
-   
-    
+}   
 );
+$("body").on("touchstart",function(){
+    if(level==0)
+    gamelevel();
+ 
+ });
 $(".btn").click(function() {
     userseq.push($(this).attr("id"));
     check(userseq.length-1);
